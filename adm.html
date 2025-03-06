@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Login page</title>
+
+<style>
+.login
+{
+ 
+ text-align: center;
+
+  border:2px solid black;  
+ 
+ margin: 40px 450px 50px 450px;
+ 
+ padding-left: 10px;
+ 
+ background-color: #CBE4DE;
+
+}
+
+h1
+
+{
+   
+ text-align: center;
+   
+ color: white;
+  
+ background-color:#0F6292;
+
+}
+
+
+.b
+{
+ padding: 1% 1% 1% 1%;
+ border-style:solid;
+}
+</style>
+</head>
+
+<body>
+<form action="adm.php" method="post">
+<h1>LOGIN</h1>
+<div class="login">
+<label><br><br>USERNAME:</label><input type="text" id="username"><br><br>   
+ <label>PASSWORD:</label><input type="password" id="password"><br> <p>   
+<button type="submit" onclick="a()">Submit</button>
+<input type="reset" name="reset">
+</div>
+<div class="login">
+Don't have an account?<a href="sign up.html"> Sign Up</a>
+<script>
+function a()
+{
+	var u,p;
+	u=document.getElementById("username").value;
+	p=document.getElementById("password").value;
+	if(u=="ADMIN"&&p=="poly@gvl")
+	{
+		alert("Login successful");
+		window.open("admin.html");
+	}
+	else
+	{
+		alert("Enter valid Details");
+	}
+}
+</script>
+</div>
+</form>
+</body>
+</html>

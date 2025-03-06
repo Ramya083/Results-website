@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>Enter Marks</title>
+<style>
+    .b
+    {
+        margin:20px 300px 20px 300px;
+        padding:10px 15px 15px 15px;
+        border-style:double;
+        
+    }
+      .c
+    {
+        background: #2BC0E4; 
+background: -webkit-linear-gradient(to top, #EAECC6, #2BC0E4);  
+background: linear-gradient(to top, #EAECC6, #2BC0E4); 
+    }
+    .button 
+    {
+  display: inline-block;
+  padding: 12px 28px;
+  margin: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-image: linear-gradient(to bottom right, #00c6ff, #0072ff);
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0px 4px 0px #0072ff;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 0px #0072ff;
+}
+
+.button:active {
+  transform: translateY(0px);
+  box-shadow: none;
+  background-image: linear-gradient(to bottom right, #0072ff, #00c6ff);
+}
+
+.button:before,
+.button:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.button:before {
+  top: -3px;
+  left: -3px;
+  border-radius: 40px;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+}
+
+.button:after {
+  bottom: -3px;
+  right: -3px;
+  border-radius: 40px;
+  border-bottom: 3px solid #fff;
+  border-right: 3px solid #fff;
+}
+</style>
+</head>
+
+<body align="center" class="b">
+    <div class="c">
+    <h1>ENTER YOUR 4sem MARKS:</h1>
+<form action="sem4.php" method="post">
+ENTER YOUR PINNO:<input type="text" name="n">
+<h2>ENTER YOUR EXTERNAL MARKS:</h2>
+401:<input type="text" name="401"></p>
+402:<input type="text" name="402"></p>
+403:<input type="text" name="403"></p>
+404:<input type="text" name="404"></p>
+405:<input type="text" name="405"></p>
+<h2>ENTER YOUR LAB MARKS:</h2>
+406:<input type="text" name="406"></p>
+407:<input type="text" name="407"></p>
+408:<input type="text" name="408"></p>
+409:<input type="text" name="409"></p>
+<button type="submit" onclick="j()" class="button">Submit</button>
+<script>
+function j()
+{
+    alert("inserted sucessfully");
+    window.open("sem4.html");
+}
+</script>
+</form>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Login page</title>
+
+<style>
+.login
+{
+ 
+ text-align: center;
+
+  border:2px solid black;  
+ 
+ margin: 40px 450px 50px 450px;
+ 
+ padding-left: 10px;
+ 
+ background-color: #CBE4DE;
+
+}
+
+h1
+
+{
+   
+ text-align: center;
+   
+ color: white;
+  
+ background-color:#0F6292;
+
+}
+
+
+.b
+{
+ padding: 1% 1% 1% 1%;
+ border-style:solid;
+}
+</style>
+</head>
+
+<body>
+<form action="emp.php" method="post">
+<h1>LOGIN</h1>
+<div class="login">
+<label><br><br>USERNAME:</label><input type="text" name="a"><br><br>   
+ <label>PASSWORD:</label><input type="password" name="b" id="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br> <p>   
+<button type="submit" onclick="h()">Submit</button>
+<input type="reset" name="reset">
+</div>
+<div class="login">
+Don't have an account?<a href="sign up.html"> Sign Up</a>
+<script>
+function h()
+{
+    alert("login sucessfully");
+     window.open("empadminpage.html");   
+}
+</script>
+</div>
+</form>
+</body>
+</html>
